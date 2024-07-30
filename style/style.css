@@ -1,14 +1,16 @@
 @import url(./fons.css);
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- } a {
-    text-decoration: none;
-  }
-  ul {
-    list-style: none;
-  }
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
 .container {
   max-width: 1170px;
   width: 100%;
@@ -50,15 +52,68 @@
   padding: 1px;
   transition: 0.5s;
 }
+.apple {
+  background: #000;
+  width: 40px;
+  height: 49px;
+}
+.appl_text {
+  font-family: var(--p400);
+}
+.appl_logo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.appl_title {
+  font-family: var(--i600);
+  padding: 20px 0;
+  font-size: 48px;
+  font-weight: 600;
+  width: 320px;
+}
+.appl_links {
+  gap: 8px;
+}
+.appl_link {
+  font-family: var(--p500);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.appl_box {
+  position: absolute;
+  top: 54px;
+  left: 64px;
+  color: white;
+}
 
+.icon {
+  background: #000;
+  width: 24px;
+  height: 24px;
+
+  left: 8px;
+  display: flex;
+  align-items: center;
+}
+.appl_links {
+  display: flex;
+}
 .limk {
   width: 217px;
   border-right: 1px solid #000;
   padding-top: 40px;
 }
-.links{
-color: #000;
-font-family: var(--p400);
+.links {
+  color: #000;
+  font-family: var(--p400);
+}
+.links .lisn {
+  color: #000;
+}
+.lisn {
+  color: #000;
 }
 .input {
   font-family: var(--p400);
@@ -75,19 +130,19 @@ font-family: var(--p400);
   flex-direction: column;
   gap: 16px;
 }
-.swiper-wrapper{
+.swiper-wrapper {
   margin: 40px 16px;
+  position: relative;
 }
 
 :root {
-  --i400:"Inter-Regular";
-  --i500:"Inter-Medium";
-  --i600:"Inter-SemiBold";
-  --i700:"Inter-Bold";
-  --p400:"Poppins-Regular";
-  --p500:"Poppins-Medium";
-  --p600:"Poppins-SemiBold";
-
+  --i400: "Inter-Regular";
+  --i500: "Inter-Medium";
+  --i600: "Inter-SemiBold";
+  --i700: "Inter-Bold";
+  --p400: "Poppins-Regular";
+  --p500: "Poppins-Medium";
+  --p600: "Poppins-SemiBold";
 }
 .logo {
   font-family: Inter;
@@ -103,10 +158,10 @@ font-family: var(--p400);
   outline: none;
   align-items: center;
   padding: 7px 12px 7px 20px;
-  gap: 10px 34px ;
+  gap: 10px 34px;
   border-radius: 4px;
 }
-.mySwiper{
+.mySwiper {
   margin-left: 16px;
 }
 .forma {
@@ -131,7 +186,6 @@ font-family: var(--p400);
 }
 .swiper {
   max-width: 892px;
- 
 }
 .dir {
   display: flex;
@@ -140,6 +194,7 @@ font-family: var(--p400);
 .swiper-slide {
   height: 344px !important;
   display: none;
+  padding-left: 50%;
 }
 .swiper-slide img {
   width: 100%;
