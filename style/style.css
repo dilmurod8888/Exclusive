@@ -1,22 +1,27 @@
 @import url(./fons.css);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: #fff;
 }
+
 ul {
   list-style: none;
 }
+
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .swiper-slide {
   background: #000;
 }
@@ -28,6 +33,7 @@ ul {
   border-bottom: 1px solid #000;
   gap: 16px 0;
 }
+
 .nav_logo {
   font-family: var(--i700);
   font-size: 24px;
@@ -35,51 +41,104 @@ ul {
   line-height: 24px;
   color: #000;
 }
+
 .nav_list {
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 48px;
-  list-style: none;
 }
+
 .nav_link {
   color: #000;
-  text-wrap: nowrap;
   font-family: var(--p400);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
 }
-.nav_link:hover {
-  border-bottom: 1px solid #fff;
-  padding: 1px;
+
+.nav_link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: darkgrey;
+  /* background-color: #db4444; */
+  border-radius: 10px;
+  display: block;
+  transform: scale(0);
   transition: 0.5s;
 }
+
+.nav_link:hover::after {
+  transform: scale(1);
+}
+
 .apple {
   background: #000;
   width: 40px;
   height: 49px;
 }
+
 .appl_text {
   font-family: var(--p400);
 }
+
 .appl_logo {
   display: flex;
   align-items: center;
   gap: 24px;
 }
+
 .appl_title {
   font-family: var(--i600);
   padding: 20px 0;
   font-size: 48px;
   font-weight: 600;
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
+
 .appl_links {
   gap: 8px;
+  display: flex;
+  width: fit-content;
+  padding-bottom: 5px;
 }
+
+.appl_link {
+  position: relative;
+}
+
+.appl_link::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  content: "";
+  height: 2px;
+  background-color: darkgrey;
+  border-radius: 10px;
+  display: block;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.appl_links:hover .appl_link::after {
+  transform: scale(1);
+}
+
 .appl_link {
   font-family: var(--p500);
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+}
+.next{
+
 }
 .appl_box {
   position: absolute;
@@ -97,24 +156,26 @@ ul {
   display: flex;
   align-items: center;
 }
-.appl_links {
-  display: flex;
-}
+
 .limk {
   width: 217px;
   border-right: 1px solid #000;
   padding-top: 40px;
 }
+
 .links {
   color: #000;
   font-family: var(--p400);
 }
+
 .links .lisn {
   color: #000;
 }
+
 .lisn {
   color: #000;
 }
+
 .input {
   font-family: var(--p400);
   font-size: 16px;
@@ -125,11 +186,13 @@ ul {
   outline: none;
   background: #f5f5f5;
 }
+
 .limk {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .swiper-wrapper {
   margin: 40px 16px;
   position: relative;
@@ -144,6 +207,7 @@ ul {
   --p500: "Poppins-Medium";
   --p600: "Poppins-SemiBold";
 }
+
 .logo {
   font-family: Inter;
   font-size: 24px;
@@ -161,47 +225,57 @@ ul {
   gap: 10px 34px;
   border-radius: 4px;
 }
+
 .mySwiper {
   margin-left: 16px;
 }
+
 .forma {
   display: flex;
   gap: 24px;
   justify-content: space-between;
   margin: 16px 0;
 }
+
 .imags {
   display: flex;
   align-items: center;
   gap: 16px;
 }
+
 .img {
   gap: 3px auto;
   align-items: center;
 }
+
 .img1 {
   border: none;
   background-color: transparent;
   width: 100%;
 }
+
 .swiper {
   max-width: 892px;
 }
+
 .dir {
   display: flex;
   justify-content: start;
 }
+
 .swiper-slide {
   height: 344px !important;
   display: none;
   padding-left: 50%;
 }
+
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
 }
+
 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
@@ -211,6 +285,7 @@ ul {
   gap: 12px;
   height: 12px;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #db4444 !important;
   opacity: 1 !important;
